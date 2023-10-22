@@ -22,7 +22,7 @@ app.css.config.serve_locally = True
 
 # Load the data once when the app starts
 df = load_data(
-    args.awscredentials[0], args.awscredentials[1], args.awscredentials[3]
+    args.awscredentials[0], args.awscredentials[1], args.awscredentials[2]
 )
 
 # Apply the formatting function to the DataFrame
