@@ -2,7 +2,8 @@ loguru==0.7.2
 pandas
 requests==2.27.1
 pyarrow==13.0.0
-awswrangler==3.4.0
+boto3==1.14.5
+awswrangler
 python-dotenv==1.0.0
 dash==2.14.0
 openpyxl==1.1.0
