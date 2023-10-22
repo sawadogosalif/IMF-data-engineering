@@ -22,7 +22,7 @@ def load_data():
     )
 
     # Define your S3 data location (!!!must the most recent ! to do)
-    objects = wr.s3.list_directories("s3://bucketsawalle/datasets/")
+    objects = wr.s3.list_directories("s3://bucketsawalle/datasets/", boto3_session=session)
     objects.sort()
     s3_data_location = objects[-1]
 
