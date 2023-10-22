@@ -20,7 +20,9 @@ def load_data():
         aws_secret_access_key=os.environ['AWS_SECRET_ACCESS_KEY'],
         region_name=os.environ['AWS_DEFAULT_REGION']
     )
-
+    print("AWS_ACCESS_KEY_ID:", os.environ['AWS_ACCESS_KEY_ID'])
+    print("AWS_SECRET_ACCESS_KEY:", os.environ['AWS_SECRET_ACCESS_KEY'])
+    print("AWS_DEFAULT_REGION:", os.environ['AWS_DEFAULT_REGION'])
     # Define your S3 data location (!!!must the most recent ! to do)
     objects = wr.s3.list_directories("s3://bucketsawalle/datasets/", boto3_session=session)
     objects.sort()
