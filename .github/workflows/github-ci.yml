@@ -29,6 +29,7 @@ jobs:
 
     - name: Run Job
       run: python main.py --awscredentials ${{secrets.AWS_ACCESS_KEY_ID}} ${{secrets.AWS_SECRET_ACCESS_KEY}} ${{secrets.AWS_DEFAULT_REGION}} # Modify this according to your needs
+      timeout-minutes: 2
 
     - name : Lint
       run: black .
