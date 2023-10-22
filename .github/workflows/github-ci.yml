@@ -29,6 +29,13 @@ jobs:
     
     - name : Lint
       run: black .
+    
+    - name: Commit and Push Changes
+      run: |
+        git add .
+        git commit -m "Apply Black formatting"
+        git push
+      if: success()
 
 
       
